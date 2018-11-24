@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="?app_background"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="?toolbar_line_color"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="20dp"
+                android:background="?item_setting_bg">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentTop="true"
+                    android:background="?lineColor"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:text="干货推送"
+                    android:textColor="?setting_text_color"
+                    android:textSize="14sp"/>
+
+                <ImageView
+                    android:id="@+id/iv_push"
+                    android:layout_width="50dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    app:srcCompat="@drawable/gank_icon_switcher_on"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="?item_setting_bg">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="16dp"
+                    android:background="?lineColor"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="16dp"
+                    android:text="夜间模式"
+                    android:textColor="?setting_text_color"
+                    android:textSize="14sp"/>
+
+                <ImageView
+                    android:id="@+id/iv_night_mode"
+                    android:layout_width="50dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="12dp"
+                    app:srcCompat="@drawable/gank_icon_switcher_off"/>
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="?lineColor"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="?item_bg"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="?lineColor"/>
+
+                <com.maning.gankmm.ui.view.MySettingItemView
+                    android:id="@+id/item_gank_headline"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="?item_setting_bg"
+                    app:setting_red_dot="false"
+                    app:setting_right_text="Android"
+                    app:setting_title="头条类型"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="16dp"
+                    android:background="?lineColor"/>
+
+                <com.maning.gankmm.ui.view.MySettingItemView
+                    android:id="@+id/item_clean_cache"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="?item_setting_bg"
+                    app:setting_red_dot="false"
+                    app:setting_right_text="0M"
+                    app:setting_title="图片缓存"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="16dp"
+                    android:background="?lineColor"/>
+
+                <com.maning.gankmm.ui.view.MySettingItemView
+                    android:id="@+id/item_feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="?item_setting_bg"
+                    android:visibility="visible"
+                    app:setting_red_dot="false"
+                    app:setting_title="意见反馈"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="16dp"
+                    android:background="?lineColor"/>
+
+
+                <com.maning.gankmm.ui.view.MySettingItemView
+                    android:id="@+id/item_app_update"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="?item_setting_bg"
+                    app:setting_red_dot="true"
+                    app:setting_title="版本更新"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="?lineColor"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="?item_bg"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="?lineColor"/>
+
+                <com.maning.gankmm.ui.view.MySettingItemView
+                    android:id="@+id/item_app_open_frame"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="?item_setting_bg"
+                    app:setting_red_dot="false"
+                    app:setting_title="开源框架使用"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="?lineColor"/>
+
+                <com.maning.gankmm.ui.view.MySettingItemView
+                    android:id="@+id/item_app_market"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="?item_setting_bg"
+                    app:setting_red_dot="false"
+                    app:setting_title="给干货营评分"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="?lineColor"/>
+
+                <com.maning.gankmm.ui.view.MySettingItemView
+                    android:id="@+id/item_app_support"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="?item_setting_bg"
+                    app:setting_red_dot="false"
+                    app:setting_title="请作者喝一杯咖啡 (￣▽￣)~*"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="?lineColor"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

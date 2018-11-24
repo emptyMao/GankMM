@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/backgroundColor"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white">
+
+        <EditText
+            android:maxLength="15"
+            android:id="@+id/et_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="30dp"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="输入您的个性签名..."
+            android:padding="10dp"
+            android:textColor="@color/black_text2_color"
+            android:textColorHint="@color/black_text3_color"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_num_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:text="0/15"
+            android:textColor="#e49f16"
+            android:textSize="14sp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
